@@ -8,7 +8,7 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 // todo -1
   useEffect(() => {
-    api.get('/api/Holdings').then((res) => {
+    api.get('/Holdings').then((res) => {
       console.log(res.data);
       setAllHoldings(res.data);
     });

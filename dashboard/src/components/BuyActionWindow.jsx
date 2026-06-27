@@ -11,7 +11,7 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    api.post("/api/newOrder", {
+    api.post("/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
