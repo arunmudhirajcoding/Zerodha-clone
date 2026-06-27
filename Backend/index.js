@@ -5,6 +5,9 @@ import "dotenv/config";
 import HoldingsModel from "./model/HoldingsModel.js";
 import PositionsModle from './model/PositionsSchema.js'
 import bodyParser from "body-parser";
+import dns from "node:dns";
+
+dns.setServers(["1.1.1.1", "1.0.0.1"]);
 
 const app = express();
 const PORT = process.env.PORT || 3002;
